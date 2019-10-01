@@ -1,6 +1,8 @@
 package main
 
 import (
+	"cmd/compile/internal/ppc64"
+	"github.com/vmware/govmomi/event"
 	"fmt"
 )
 

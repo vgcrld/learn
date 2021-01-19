@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/vgcrld/learngo/structs/employee"
+)
 
 // Person is a person
 type Person struct {
@@ -17,6 +21,8 @@ func (p Person) Greet() string {
 
 func main() {
 
+	x := employee.Lacky{Name: "Rich"}
+	fmt.Println(x)
 	people := []Person{
 		Person{"rich", "davis", 49, "M"},
 		Person{"bob", "davis", 53, "M"},

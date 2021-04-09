@@ -6,15 +6,14 @@ import (
 
 // Make me a people
 type people struct {
-	Name string
-	Age  int
+	First string
+	Last  string
+	Age   string
 }
 
 // add this function to people
-func (t *people) getFull() string {
-	name := t.Name
-	age := fmt.Sprint(t.Age)
-	full := name + " " + age
+func (t *people) getFullName() string {
+	full := t.Last + ", " + t.First + ", Age: " + t.Age
 	return full
 }
 
@@ -22,15 +21,10 @@ func (t *people) getFull() string {
 func main() {
 
 	// Create a type people
-	person := people{"rich", 44}
+	person1 := people{"Rich", "Davis", "51"}
+	person2 := people{"Rich", "Davis", "55"}
 
-	full := person.getFull()
-
-	full = person.getFull()
-
-	person.Name = "bob"
-	fmt.Println(person)
-
-	fmt.Printf("%s", full)
+	fmt.Println(person1.getFullName())
+	fmt.Println(person2.getFullName())
 
 }

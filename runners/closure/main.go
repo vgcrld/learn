@@ -37,4 +37,5 @@ func main() {
 	// particular function, create and test a new one.
 	newInts := intSeq(10)
 	fmt.Println(newInts())
+	fmt.Println(nextInt())
 }

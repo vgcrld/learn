@@ -23,6 +23,16 @@ func intSeq(i int) func() int {
 	}
 }
 
+// you can separate this stuff
+func returnInt(i int) func(i) int {
+	return doSomething(i)
+}
+
+// you can separate this stuff pretty good
+func doSomething(i int) int {
+	return i
+}
+
 func main() {
 
 	// We call `intSeq`, assigning the result (a function)

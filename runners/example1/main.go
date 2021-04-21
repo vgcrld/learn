@@ -20,6 +20,14 @@ func (t *people) getFullName() string {
 // Start here
 func main() {
 
+	var peeps []people
+
+	peeps = append(peeps, people{"Rich", "is", "50"})
+	peeps = append(peeps, people{"bob", "is", "not"})
+	for _, v := range peeps {
+		fmt.Println(v.First)
+	}
+
 	// Create a type people
 	person1 := people{"Rich", "Davis", "51"}
 	person2 := people{"Rich", "Davis", "55"}

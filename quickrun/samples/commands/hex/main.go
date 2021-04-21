@@ -4,9 +4,9 @@ import "fmt"
 
 func main() {
 
-	for x := 0; x < 100; x++ {
+	for x := 0; x <= 255; x++ {
 
-		fmt.Printf("%X is %0b in decimal.\n", x, x)
+		fmt.Printf("%v is %X in hex and %0b in binary.\n", x, x, x)
 	}
 
 }

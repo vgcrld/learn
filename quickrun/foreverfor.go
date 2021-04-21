@@ -4,6 +4,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 )
 
 func main() {
@@ -15,11 +16,13 @@ func main() {
 
 		fmt.Printf("%8d ", a)
 
-    //use this code to break out
-    // a++
-		// if a > 10000 {
-		// 	break
-		// }
+		//use this code to break out
+		a++
+		if a > 10000 {
+			break
+		}
+
+		time.Sleep(time.Millisecond * 10)
 
 	}
 

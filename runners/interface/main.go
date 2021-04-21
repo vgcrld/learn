@@ -8,7 +8,7 @@ import (
 // Shape make area available to each
 // Basically any struct that implements area
 type Shape interface {
-	area() float64
+	area() float64 // remember this is the signature
 }
 
 // Circle struct define center point and the radius

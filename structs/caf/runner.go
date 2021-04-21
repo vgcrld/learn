@@ -9,7 +9,7 @@ type Job interface {
 	Run()
 }
 
-// JobQueue is an array of Jobs
+// JobQueue is slice of Jobs
 type JobQueue []Job
 
 // Runner struct to hold JoeQueues
